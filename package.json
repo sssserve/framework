@@ -1,0 +1,35 @@
+{
+  "name": "@sssserve/framework",
+  "version": "0.0.1",
+  "description": "Description.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sssserve/framework.git"
+  },
+  "keywords": [
+    "framework",
+    "javascript"
+  ],
+  "author": "Wilson Lewis <wilsonlewis@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sssserve/framework/issues"
+  },
+  "homepage": "https://github.com/sssserve/framework#readme",
+  "devDependencies": {
+    "ava": "^0.22.0"
+  },
+  "ava": {
+    "files": [
+      "tests/**/*.js"
+    ]
+  },
+  "dependencies": {
+    "collect.js": "^3.0.51",
+    "lodash": "^4.17.4"
+  }
+}
