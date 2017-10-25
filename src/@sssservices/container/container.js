@@ -43,7 +43,7 @@ class Container {
       get() {
         return this.make(abstract)
       }
-    }
+    })
   }
 
   getCallable(abstract, concrete) {
