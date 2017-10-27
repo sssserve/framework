@@ -1,5 +1,5 @@
-const Dispatcher = require('../src/@sssservices/events/dispatcher')
-const Application = require('../src/@sssservices/foundation/application')
+const Dispatcher = require('../../src/@sssservices/events/dispatcher')
+const Application = require('../../src/@sssservices/foundation/application')
 const test = require('ava')
 
 test.beforeEach(t => {

@@ -1,6 +1,6 @@
-const get = require('../support/get')
-const set = require('../support/set')
-const has = require('../support/has')
+const get = require('../support/helpers/get')
+const set = require('../support/helpers/set')
+const has = require('../support/helpers/has')
 
 class Repository {
   constructor(items) {

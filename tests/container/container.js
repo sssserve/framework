@@ -1,4 +1,4 @@
-const Container = require('../src/@sssservices/container/container')
+const Container = require('../../src/@sssservices/container/container')
 const test = require('ava')
 
 class Foo {

@@ -1,0 +1,12 @@
+{
+	"name": "@sssservices/support",
+	"version": "0.0.8",
+	"description": "[READ ONLY] Subtree split of the Sssserve Support component (see @sssserve/framework)",
+	"repository": "https://github.com/sssservices/support",
+	"author": "Wilson Lewis <wilsonlewis@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"collect.js": "^3.0.51",
+		"lodash": "^4.17.4"
+	}
+}

@@ -28,7 +28,12 @@ class LoadConfiguration {
     const config = {}
 
     for (const key of context.keys()) {
-      config[key.replace(/\//g, '.')] = context(key)
+      const name = key
+        .replace(/\.js$/g, '')
+        .split('/')
+        .pop()
+
+      config[name] = context(key)
     }
 
     return config
