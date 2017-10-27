@@ -1,6 +1,6 @@
 {
 	"name": "@sssserve/framework",
-	"version": "0.0.10",
+	"version": "0.1.0",
 	"description": "Description.",
 	"main": "index.js",
 	"scripts": {
@@ -21,14 +21,14 @@
 	},
 	"homepage": "https://github.com/sssserve/framework#readme",
 	"dependencies": {
-		"@sssservices/build": "^0.0.10",
-		"@sssservices/config": "^0.0.10",
-		"@sssservices/container": "^0.0.10",
-		"@sssservices/content": "^0.0.10",
-		"@sssservices/events": "^0.0.10",
-		"@sssservices/foundation": "^0.0.10",
-		"@sssservices/log": "^0.0.10",
-		"@sssservices/support": "^0.0.10"
+		"@sssservices/build": "^0.1.0",
+		"@sssservices/config": "^0.1.0",
+		"@sssservices/container": "^0.1.0",
+		"@sssservices/content": "^0.1.0",
+		"@sssservices/events": "^0.1.0",
+		"@sssservices/foundation": "^0.1.0",
+		"@sssservices/log": "^0.1.0",
+		"@sssservices/support": "^0.1.0"
 	},
 	"devDependencies": {
 		"ava": "^0.22.0",

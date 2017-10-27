@@ -1,6 +1,6 @@
 {
 	"name": "@sssservices/support",
-	"version": "0.0.10",
+	"version": "0.1.0",
 	"description": "[READ ONLY] Subtree split of the Sssserve Support component (see @sssserve/framework)",
 	"repository": "https://github.com/sssservices/support",
 	"author": "Wilson Lewis <wilsonlewis@gmail.com>",
