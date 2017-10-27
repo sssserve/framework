@@ -1,16 +1,16 @@
 {
 	"name": "@sssservices/foundation",
-	"version": "0.0.9",
+	"version": "0.0.10",
 	"description": "[READ ONLY] Subtree split of the Sssserve Foundation component (see @sssserve/framework)",
 	"main": "application.js",
 	"repository": "https://github.com/sssservices/foundation",
 	"author": "Wilson Lewis <wilsonlewis@gmail.com>",
 	"license": "MIT",
 	"dependencies": {
-		"@sssservices/config": "^0.0.9",
-		"@sssservices/container": "^0.0.9",
-		"@sssservices/events": "^0.0.9",
-		"@sssservices/log": "^0.0.9",
-		"@sssservices/support": "^0.0.9"
+		"@sssservices/config": "^0.0.10",
+		"@sssservices/container": "^0.0.10",
+		"@sssservices/events": "^0.0.10",
+		"@sssservices/log": "^0.0.10",
+		"@sssservices/support": "^0.0.10"
 	}
 }

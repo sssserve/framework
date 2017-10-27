@@ -2,7 +2,7 @@
 1 verbose cli [ '/Users/wlewis/.nvm/versions/node/v6.10.2/bin/node',
 1 verbose cli   '/Users/wlewis/.nvm/versions/node/v6.10.2/bin/npm',
 1 verbose cli   'publish',
-1 verbose cli   '--public' ]
+1 verbose cli   '--access=public' ]
 2 info using npm@3.10.10
 3 info using node@v6.10.2
 4 verbose publish [ '.' ]
@@ -16,22 +16,22 @@
 7 silly cache add   rawSpec: '.',
 7 silly cache add   spec: '/Users/wlewis/Code/@sssserve/framework',
 7 silly cache add   type: 'directory' }
-8 verbose addLocalDirectory /Users/wlewis/.npm/@sssserve/framework/0.0.8/package.tgz not in flight; packing
+8 verbose addLocalDirectory /Users/wlewis/.npm/@sssserve/framework/0.0.9/package.tgz not in flight; packing
 9 verbose correctMkdir /Users/wlewis/.npm correctMkdir not in flight; initializing
-10 info lifecycle @sssserve/framework@0.0.8~prepublish: @sssserve/framework@0.0.8
-11 silly lifecycle @sssserve/framework@0.0.8~prepublish: no script for prepublish, continuing
-12 verbose tar pack [ '/Users/wlewis/.npm/@sssserve/framework/0.0.8/package.tgz',
+10 info lifecycle @sssserve/framework@0.0.9~prepublish: @sssserve/framework@0.0.9
+11 silly lifecycle @sssserve/framework@0.0.9~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/wlewis/.npm/@sssserve/framework/0.0.9/package.tgz',
 12 verbose tar pack   '/Users/wlewis/Code/@sssserve/framework' ]
-13 verbose tarball /Users/wlewis/.npm/@sssserve/framework/0.0.8/package.tgz
+13 verbose tarball /Users/wlewis/.npm/@sssserve/framework/0.0.9/package.tgz
 14 verbose folder /Users/wlewis/Code/@sssserve/framework
-15 verbose addLocalTarball adding from inside cache /Users/wlewis/.npm/@sssserve/framework/0.0.8/package.tgz
+15 verbose addLocalTarball adding from inside cache /Users/wlewis/.npm/@sssserve/framework/0.0.9/package.tgz
 16 verbose correctMkdir /Users/wlewis/.npm correctMkdir not in flight; initializing
-17 silly cache afterAdd @sssserve/framework@0.0.8
-18 verbose afterAdd /Users/wlewis/.npm/@sssserve/framework/0.0.8/package/package.json not in flight; writing
+17 silly cache afterAdd @sssserve/framework@0.0.9
+18 verbose afterAdd /Users/wlewis/.npm/@sssserve/framework/0.0.9/package/package.json not in flight; writing
 19 verbose correctMkdir /Users/wlewis/.npm correctMkdir not in flight; initializing
-20 verbose afterAdd /Users/wlewis/.npm/@sssserve/framework/0.0.8/package/package.json written
+20 verbose afterAdd /Users/wlewis/.npm/@sssserve/framework/0.0.9/package/package.json written
 21 silly publish { name: '@sssserve/framework',
-21 silly publish   version: '0.0.8',
+21 silly publish   version: '0.0.9',
 21 silly publish   description: 'Description.',
 21 silly publish   main: 'index.js',
 21 silly publish   scripts: { test: 'ava' },
@@ -44,14 +44,14 @@
 21 silly publish   bugs: { url: 'https://github.com/sssserve/framework/issues' },
 21 silly publish   homepage: 'https://github.com/sssserve/framework#readme',
 21 silly publish   dependencies:
-21 silly publish    { '@sssservices/build': '^0.0.8',
-21 silly publish      '@sssservices/config': '^0.0.8',
-21 silly publish      '@sssservices/container': '^0.0.8',
-21 silly publish      '@sssservices/content': '^0.0.8',
-21 silly publish      '@sssservices/events': '^0.0.8',
-21 silly publish      '@sssservices/foundation': '^0.0.8',
-21 silly publish      '@sssservices/log': '^0.0.8',
-21 silly publish      '@sssservices/support': '^0.0.8' },
+21 silly publish    { '@sssservices/build': '^0.0.9',
+21 silly publish      '@sssservices/config': '^0.0.9',
+21 silly publish      '@sssservices/container': '^0.0.9',
+21 silly publish      '@sssservices/content': '^0.0.9',
+21 silly publish      '@sssservices/events': '^0.0.9',
+21 silly publish      '@sssservices/foundation': '^0.0.9',
+21 silly publish      '@sssservices/log': '^0.0.9',
+21 silly publish      '@sssservices/support': '^0.0.9' },
 21 silly publish   devDependencies:
 21 silly publish    { ava: '^0.22.0',
 21 silly publish      'collect.js': '^3.0.51',
@@ -59,10 +59,10 @@
 21 silly publish      semver: '^5.4.1',
 21 silly publish      yargs: '^10.0.3' },
 21 silly publish   ava: { files: [ 'tests/**/*.js' ] },
-21 silly publish   gitHead: 'b7abad607869db48bfabecb977d450b2d0ef7498',
+21 silly publish   gitHead: '4a3e602fead3ac1f3997184858351225e0f213e5',
 21 silly publish   readme: 'ERROR: No README data found!',
-21 silly publish   _id: '@sssserve/framework@0.0.8',
-21 silly publish   _shasum: '1f6038ebae56c1c567dd41e8b0393ad6041951f0',
+21 silly publish   _id: '@sssserve/framework@0.0.9',
+21 silly publish   _shasum: 'b315bd74e88b87f0bb28b0b8c524dd1720a158a6',
 21 silly publish   _from: '.' }
 22 verbose getPublishConfig undefined
 23 silly mapToRegistry name @sssserve/framework
@@ -80,28 +80,28 @@
 28 silly mapToRegistry   type: 'tag' }
 29 silly mapToRegistry uri https://registry.npmjs.org/@sssserve%2fframework
 30 verbose publish registryBase https://registry.npmjs.org/
-31 silly publish uploading /Users/wlewis/.npm/@sssserve/framework/0.0.8/package.tgz
+31 silly publish uploading /Users/wlewis/.npm/@sssserve/framework/0.0.9/package.tgz
 32 verbose request uri https://registry.npmjs.org/@sssserve%2fframework
 33 verbose request sending authorization for write operation
-34 info attempt registry request try #1 at 4:26:28 PM
+34 info attempt registry request try #1 at 4:30:49 PM
 35 verbose request using bearer token for auth
-36 verbose request id 8f896161ef37a806
+36 verbose request id e1f201a30d4e032d
 37 http request PUT https://registry.npmjs.org/@sssserve%2fframework
-38 http 402 https://registry.npmjs.org/@sssserve%2fframework
+38 http 404 https://registry.npmjs.org/@sssserve%2fframework
 39 verbose headers { 'content-type': 'application/json',
 39 verbose headers   'cache-control': 'max-age=0',
-39 verbose headers   'content-length': '49',
+39 verbose headers   'content-length': '27',
 39 verbose headers   'accept-ranges': 'bytes',
-39 verbose headers   date: 'Fri, 27 Oct 2017 20:26:28 GMT',
+39 verbose headers   date: 'Fri, 27 Oct 2017 20:30:49 GMT',
 39 verbose headers   via: '1.1 varnish',
 39 verbose headers   connection: 'keep-alive',
-39 verbose headers   'x-served-by': 'cache-ewr18143-EWR',
+39 verbose headers   'x-served-by': 'cache-ewr18128-EWR',
 39 verbose headers   'x-cache': 'MISS',
 39 verbose headers   'x-cache-hits': '0',
-39 verbose headers   'x-timer': 'S1509135988.400338,VS0,VE592' }
+39 verbose headers   'x-timer': 'S1509136249.188124,VS0,VE643' }
 40 verbose request invalidating /Users/wlewis/.npm/registry.npmjs.org/_40sssserve_252fframework on PUT
-41 error publish Failed PUT 402
-42 verbose stack Error: You must sign up for private packages : @sssserve/framework
+41 error publish Failed PUT 404
+42 verbose stack Error: Scope not found : @sssserve/framework
 42 verbose stack     at makeError (/Users/wlewis/.nvm/versions/node/v6.10.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
 42 verbose stack     at CachingRegistryClient.<anonymous> (/Users/wlewis/.nvm/versions/node/v6.10.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
 42 verbose stack     at Request._callback (/Users/wlewis/.nvm/versions/node/v6.10.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
@@ -112,15 +112,18 @@
 42 verbose stack     at emitOne (events.js:96:13)
 42 verbose stack     at Request.emit (events.js:188:7)
 42 verbose stack     at IncomingMessage.<anonymous> (/Users/wlewis/.nvm/versions/node/v6.10.2/lib/node_modules/npm/node_modules/request/request.js:969:12)
-43 verbose statusCode 402
+43 verbose statusCode 404
 44 verbose pkgid @sssserve/framework
 45 verbose cwd /Users/wlewis/Code/@sssserve/framework
 46 error Darwin 16.7.0
-47 error argv "/Users/wlewis/.nvm/versions/node/v6.10.2/bin/node" "/Users/wlewis/.nvm/versions/node/v6.10.2/bin/npm" "publish" "--public"
+47 error argv "/Users/wlewis/.nvm/versions/node/v6.10.2/bin/node" "/Users/wlewis/.nvm/versions/node/v6.10.2/bin/npm" "publish" "--access=public"
 48 error node v6.10.2
 49 error npm  v3.10.10
-50 error code E402
-51 error You must sign up for private packages : @sssserve/framework
-52 error If you need help, you may report this error at:
-52 error     <https://github.com/npm/npm/issues>
-53 verbose exit [ 1, true ]
+50 error code E404
+51 error 404 Scope not found : @sssserve/framework
+52 error 404
+53 error 404 '@sssserve/framework' is not in the npm registry.
+54 error 404 You should bug the author to publish it (or use the name yourself!)
+55 error 404 Note that you can also install from a
+56 error 404 tarball, folder, http url, or git url.
+57 verbose exit [ 1, true ]

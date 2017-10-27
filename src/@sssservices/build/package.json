@@ -1,12 +1,12 @@
 {
 	"name": "@sssservices/build",
-	"version": "0.0.9",
+	"version": "0.0.10",
 	"description": "[READ ONLY] Subtree split of the Sssserve Build component (see @sssserve/framework)",
 	"main": "repository.js",
 	"repository": "https://github.com/sssservices/build",
 	"author": "Wilson Lewis <wilsonlewis@gmail.com>",
 	"license": "MIT",
 	"dependencies": {
-		"@sssservices/support": "^0.0.9"
+		"@sssservices/support": "^0.0.10"
 	}
 }

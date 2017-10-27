@@ -1,12 +1,12 @@
 {
 	"name": "@sssservices/content",
-	"version": "0.0.9",
+	"version": "0.0.10",
 	"description": "[READ ONLY] Subtree split of the Sssserve Content component (see @sssserve/framework)",
 	"main": "repository.js",
 	"repository": "https://github.com/sssservices/content",
 	"author": "Wilson Lewis <wilsonlewis@gmail.com>",
 	"license": "MIT",
 	"dependencies": {
-		"@sssservices/support": "^0.0.9"
+		"@sssservices/support": "^0.0.10"
 	}
 }
