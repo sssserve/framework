@@ -1,12 +1,12 @@
 {
 	"name": "@sssservices/events",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"description": "[READ ONLY] Subtree split of the Sssserve Events component (see @sssserve/framework)",
 	"main": "dispatcher.js",
 	"repository": "https://github.com/sssservices/events",
 	"author": "Wilson Lewis <wilsonlewis@gmail.com>",
 	"license": "MIT",
 	"dependencies": {
-		"@sssservices/support": "^0.0.8"
+		"@sssservices/support": "^0.0.9"
 	}
 }

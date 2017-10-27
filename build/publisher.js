@@ -71,7 +71,7 @@ class Publisher {
       git add . &&
       git commit -m 'publish ${this.release}' &&
       git push -u origin master &&
-      npm publish --public
+      npm publish --access=public
     `
   }
 
