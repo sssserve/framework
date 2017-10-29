@@ -1,13 +1,11 @@
 const Container = require('../../src/@sssservices/container/container')
 const test = require('ava')
 
-class Foo {
+global.Foo = class Foo {
   constructor(value) {
     this.value = value
   }
 }
-
-global['Foo'] = Foo
 
 test.beforeEach(t => {
   t.context.container = new Container()

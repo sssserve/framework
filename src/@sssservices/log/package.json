@@ -1,6 +1,6 @@
 {
 	"name": "@sssservices/log",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "[READ ONLY] Subtree split of the Sssserve Log component (see @sssserve/framework)",
 	"main": "logger.js",
 	"repository": "https://github.com/sssservices/log",
