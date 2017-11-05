@@ -1,10 +1,11 @@
 {
 	"name": "@sssserve/framework",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"description": "Description.",
 	"main": "index.js",
 	"scripts": {
-		"test": "ava"
+		"test": "ava",
+		"autoload": "module-autoload"
 	},
 	"repository": {
 		"type": "git",
@@ -21,26 +22,33 @@
 	},
 	"homepage": "https://github.com/sssserve/framework#readme",
 	"dependencies": {
-		"@sssservices/build": "^0.1.3",
-		"@sssservices/config": "^0.1.3",
-		"@sssservices/container": "^0.1.3",
-		"@sssservices/content": "^0.1.3",
-		"@sssservices/events": "^0.1.3",
-		"@sssservices/foundation": "^0.1.3",
-		"@sssservices/log": "^0.1.3",
-		"@sssservices/support": "^0.1.3",
-		"@sssservices/view": "^0.1.3"
+		"@sssservices/config": "^0.1.4",
+		"@sssservices/container": "^0.1.4",
+		"@sssservices/content": "^0.1.4",
+		"@sssservices/events": "^0.1.4",
+		"@sssservices/foundation": "^0.1.4",
+		"@sssservices/log": "^0.1.4",
+		"@sssservices/support": "^0.1.4",
+		"@sssservices/view": "^0.1.4"
 	},
 	"devDependencies": {
 		"ava": "^0.22.0",
 		"collect.js": "^3.0.51",
+		"dotenv": "^4.0.0",
+		"fs-finder": "^1.8.1",
 		"lodash": "^4.17.4",
+		"module-autoload": "0.0.4",
 		"semver": "^5.4.1",
 		"yargs": "^10.0.3"
 	},
 	"ava": {
 		"files": [
-			"tests/**/*.js"
+			"tests/**/*.test.js"
 		]
+	},
+	"autoload": {
+		"alias": {
+			"@sssservices": "src/@sssservices"
+		}
 	}
 }

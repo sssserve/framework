@@ -1,5 +1,5 @@
-const Provider = require('../support/provider')
-const Dispatcher = require('./dispatcher')
+const Provider = require('@sssservices/support/provider')
+const Dispatcher = require('@sssservices/events/dispatcher')
 
 class EventProvider extends Provider {
   register() {

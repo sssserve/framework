@@ -1,4 +1,4 @@
-class BuildManager {
+class BundleManager {
   constructor(app) {
     this.app = app
     this.compilers = {}
@@ -43,7 +43,7 @@ class BuildManager {
     const config = compilers[name]
 
     if (!config) {
-      throw new Error(`Build [${name}] not configured.`)
+      throw new Error(`Bundle [${name}] not configured.`)
     }
 
     return config
@@ -62,4 +62,4 @@ class BuildManager {
   }
 }
 
-module.exports = BuildManager
+module.exports = BundleManager

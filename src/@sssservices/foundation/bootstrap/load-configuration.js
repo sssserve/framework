@@ -1,42 +1,59 @@
+const Finder = require('fs-finder')
 const Repository = require('../../config/repository')
-const isCallable = require('../../support/helpers/is-callable')
+const path = require('path')
+const fs = require('fs')
 
 class LoadConfiguration {
   bootstrap(app) {
-    const config = new Repository()
+    let items = {}
+    let cached = app.getCachedConfigPath()
+    let loadedFromCache = false
+
+    if (fs.existsSync(cached)) {
+      items = require(cached)
+      loadedFromCache = true
+    }
+
+    const config = new Repository(items)
 
     app.instance('config', config)
 
-    if (app.bound('config.context')) {
-      this.loadConfiguration(app)
+    if (!loadedFromCache) {
+      this.loadConfigurationFiles(app, config)
+    }
+
+    app.detectEnvironment(function() {
+      return config.get('app.env', 'production')
+    })
+
+    process.env.TZ = config.get('app.timezone', 'UTC')
+  }
+
+  loadConfigurationFiles(app, repository) {
+    const files = this.getConfigurationFiles(app)
+
+    if (!files['app']) {
+      throw new Error('Unable to load the "app" configuration file.')
+    }
+
+    for (const key in files) {
+      repository.set(key, files[key])
     }
   }
 
-  loadConfiguration(app) {
-    let config = app.make('config')
+  getConfigurationFiles(app) {
+    const files = {}
+    const configPath = app.configPath()
 
-    let context = app.make('config.context')
+    for (const file of Finder.from(configPath).findFiles('*.js')) {
+      const relative = path.posix
+        .relative(configPath, file)
+        .replace(/\.js$/, '')
 
-    if (isCallable(context.keys)) {
-      context = this.getConfigurationFromContext(context)
+      files[relative.split(path.sep).join('.')] = require(file)
     }
 
-    config.items = context
-  }
-
-  getConfigurationFromContext(context) {
-    const config = {}
-
-    for (const key of context.keys()) {
-      const name = key
-        .replace(/\.js$/g, '')
-        .split('/')
-        .pop()
-
-      config[name] = context(key)
-    }
-
-    return config
+    return files
   }
 }
 

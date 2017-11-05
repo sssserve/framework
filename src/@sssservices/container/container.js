@@ -1,4 +1,4 @@
-const isCallable = require('../support/helpers/is-callable')
+const isCallable = require('@sssservices/support/helpers/is-callable')
 
 class Container {
   constructor() {
@@ -121,13 +121,23 @@ class Container {
       return concrete(this, ...parameters)
     }
 
-    const constructor = global[concrete]
-
-    if (!constructor) {
+    try {
+      var Constructor = this.getConstructor(concrete)
+    } catch (err) {
       this.notInstantiable(concrete)
     }
 
-    return new constructor(...parameters)
+    return new Constructor(...parameters)
+  }
+
+  getConstructor(concrete) {
+    let Constructor = global[concrete]
+
+    if (!Constructor) {
+      Constructor = require(concrete)
+    }
+
+    return Constructor.default || Constructor
   }
 
   notInstantiable(concrete) {

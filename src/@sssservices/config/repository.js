@@ -1,6 +1,6 @@
-const get = require('../support/helpers/get')
-const set = require('../support/helpers/set')
-const has = require('../support/helpers/has')
+const get = require('@sssservices/support/helpers/get')
+const set = require('@sssservices/support/helpers/set')
+const has = require('@sssservices/support/helpers/has')
 
 class Repository {
   constructor(items) {

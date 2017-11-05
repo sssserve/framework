@@ -1,5 +1,5 @@
-const Provider = require('../support/provider')
-const logger = require('./logger')
+const Provider = require('@sssservices/support/provider')
+const logger = require('@sssservices/log/logger')
 
 class LogProvider extends Provider {
   register() {

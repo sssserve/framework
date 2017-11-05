@@ -1,14 +1,14 @@
 const Provider = require('../support/provider')
-const BuildManager = require('./build-manager')
+const BundleManager = require('./bundle-manager')
 
-class BuildProvider extends Provider {
+class BundlingProvider extends Provider {
   register() {
     this.registerCompilerServices()
   }
 
   registerCompilerServices() {
-    this.app.singleton('build', app => {
-      return new BuildManager(app)
+    this.app.singleton('bundle', app => {
+      return new BundleManager(app)
     })
 
     this.app.bind('build.compiler', app => {
@@ -17,4 +17,4 @@ class BuildProvider extends Provider {
   }
 }
 
-module.exports = BuildProvider
+module.exports = BundlingProvider

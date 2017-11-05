@@ -1,4 +1,6 @@
-const Container = require('../../src/@sssservices/container/container')
+require('module-autoload')
+
+const Container = require('@sssservices/container/container')
 const test = require('ava')
 
 global.Foo = class Foo {
@@ -51,7 +53,13 @@ test('it instatiates an alias', t => {
   t.true(t.context.container.make('Bar') === foo)
 })
 
-test('it throws an error when cannot instatiate', t => {
+test('it instatiates a module', t => {
+  const name = '@sssservices/container/container'
+
+  t.true(t.context.container.make(name) instanceof Container)
+})
+
+test('it throws an error when unable to instatiate', t => {
   t.throws(() => {
     t.context.container.make('Missing')
   }, 'Target [Missing] is not instantiable.')

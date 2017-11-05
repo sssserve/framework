@@ -1,4 +1,4 @@
-const remove = require('../support/helpers/remove')
+const remove = require('@sssservices/support/helpers/remove')
 
 class Dispatcher {
   constructor() {
